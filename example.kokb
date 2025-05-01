@@ -1,0 +1,134 @@
+// This is a test file for the kokb language
+// Testing basic commands and statements
+
+// Print statements
+print "Hello, kokb language!";
+print 42;
+print 3.14;
+
+// Variable declarations and assignments
+myInt = 10;
+myFloat = 3.14;
+myString = "test string";
+myBool = true;
+
+// Testing arithmetic operations
+result = 10 + 5;
+print result;
+
+result = 10 - 5;
+print result;
+
+result = 10 * 5;
+print result;
+
+result = 10 / 5;
+print result;
+
+result = 10 ^ 2;  // power
+print result;
+
+result = 10 % 3;  // modulo
+print result;
+
+// Testing increment and decrement
+counter = 1;
+print counter;
+counter++;
+print counter;
+counter--;
+print counter;
+
+// Testing comparison operators
+isLess = 10 < 20;
+print isLess;
+
+isGreater = 15 > 20;
+print isGreater;
+
+isLessEqual = 10 <= 10;
+print isLessEqual;
+
+isGreaterEqual = 20 >= 20;
+print isGreaterEqual;
+
+isEqual = 15 == 15;
+print isEqual;
+
+isNotEqual = 10 != 20;
+print isNotEqual;
+
+
+// Testing operator precedence
+precedenceTest = (10 + 5) * 2;
+print precedenceTest;
+
+// Testing blocks
+{
+    blockVar = 100;
+    print "This is inside a block";
+    print blockVar;
+}
+
+// Testing logical operators
+condition1 = true;
+condition2 = false;
+andResult = condition1 && condition2;
+print andResult;
+
+orResult = condition1 || condition2;
+print orResult;
+
+notResult = !condition1;
+print notResult;
+
+
+// Testing if statement
+testValue = 15;
+
+if (testValue > 10) {
+    print "testValue is greater than 10";
+}
+
+if (testValue < 10) {
+    print "testValue is less than 10";
+} else {
+    print "testValue is not less than 10";
+}
+
+if (testValue < 10) {
+    print "testValue is less than 10";
+} else if (testValue == 15) {
+    print "testValue is exactly 15";
+} else {
+    print "testValue is greater than 10 but not 15";
+}
+
+// Testing while loop
+loopCounter = 0;
+while (loopCounter < 5) {
+    print "Loop iteration:";
+    print loopCounter;
+    loopCounter++;
+}
+
+
+// Testing logical operators
+condition1 = true;
+condition2 = false;
+andResult = condition1 && condition2;
+print andResult;
+
+orResult = condition1 || condition2;
+print orResult;
+
+notResult = !condition1;
+print notResult;
+
+// Testing function definition and call (basic implementation)
+def sum(a + b) {
+    return a + b;
+}
+
+// Exit command to terminate the program
+exit;
