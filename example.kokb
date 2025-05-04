@@ -1,10 +1,9 @@
 // This is a test file for the kokb language
 // Testing basic commands and statements
 
-// Print statements
+// Print statement
 print "Hello, kokb language!";
-print 42;
-print 3.14;
+
 
 // Variable declarations and assignments
 myInt = 10;
@@ -96,13 +95,7 @@ if (testValue < 10) {
     print "testValue is not less than 10";
 }
 
-if (testValue < 10) {
-    print "testValue is less than 10";
-} else if (testValue == 15) {
-    print "testValue is exactly 15";
-} else {
-    print "testValue is greater than 10 but not 15";
-}
+
 
 // Testing while loop
 loopCounter = 0;
@@ -113,22 +106,41 @@ while (loopCounter < 5) {
 }
 
 
-// Testing logical operators
-condition1 = true;
-condition2 = false;
-andResult = condition1 && condition2;
-print andResult;
-
-orResult = condition1 || condition2;
-print orResult;
-
-notResult = !condition1;
-print notResult;
-
-// Testing function definition and call (basic implementation)
-def sum(a + b) {
+// Testing function declarations and calls
+function add(a, b) {
     return a + b;
 }
+
+
+
+// Function calls
+result = add(10, 20);
+print "Function result:";
+print result;
+
+
+
+// Recursive function
+function factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+factResult = factorial(5);
+print "Factorial of 5:";
+print factResult;
+
+// Testing exception handling
+try {
+    // Division by zero would cause an error
+    errorResult = 10 / 0;
+    print errorResult;
+} catch (error) {
+    print "Error caught:";
+    print error;
+} 
 
 // Exit command to terminate the program
 exit;
